@@ -6,21 +6,21 @@ from tqdm import tqdm
 
 import torch
 import torch.nn as nn
-import models.layers as layers
-import models.alexnet as alexnet
-import models.vggnet as vgg
-import models.prevggnet as prevgg
-import models.resnet as resnet
-import models.preresnet as preresnet
-import models.resnext as resnext
-import models.wideresnet as wideresnet
-import models.seresnet as seresnet
-import models.cbamresnet as cbamresnet
-import models.vit as vit
-import models.pit as pit
-import models.mixer as mixer
+import alternet.models.layers as layers
+# import alternet.models.alexnet as alexnet
+# import alternet.models.vggnet as vgg
+# import alternet.models.prevggnet as prevgg
+# import alternet.models.resnet as resnet
+# import alternet.models.preresnet as preresnet
+# import alternet.models.resnext as resnext
+# import alternet.models.wideresnet as wideresnet
+# import alternet.models.seresnet as seresnet
+# import alternet.models.cbamresnet as cbamresnet
+# import alternet.models.vit as vit
+# import alternet.models.pit as pit
+# import alternet.models.mixer as mixer
 
-import ops.meters as meters
+import alternet.ops.meters as meters
 
 
 def get_model(name, num_classes=10, stem=False, verbose=True, **block_kwargs):
